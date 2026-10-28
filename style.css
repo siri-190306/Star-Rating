@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe0ec, #e4d9ff, #d8f4ff);
+}
+
+.rating-card {
+    width: 90%;
+    max-width: 420px;
+    padding: 40px 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(120, 80, 150, 0.18);
+}
+
+.emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #713c91;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 43px;
+    color: #dedede;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.star.filled {
+    color: #ffb703;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+#rating-text {
+    min-height: 25px;
+    color: #713c91;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#reset-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #c471ed, #f64f8b);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#reset-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(198, 90, 180, 0.3);
+}
+
+.footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+@media (max-width: 400px) {
+    .rating-card {
+        padding: 30px 15px;
+    }
+
+    .star {
+        font-size: 36px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
